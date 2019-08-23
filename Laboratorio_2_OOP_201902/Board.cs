@@ -19,6 +19,7 @@ namespace Laboratorio_2_OOP_201902
         private SpecialCard[] specialRangeCards;
         private SpecialCard[] specialLongRangeCards;
         private SpecialCard[] captainCards;
+        //private Dictionary<string,List<Card.Card>> [DEFAULT_NUMBER_OF_PLAYERS];
 
         private List<SpecialCard> weatherCards;
 
