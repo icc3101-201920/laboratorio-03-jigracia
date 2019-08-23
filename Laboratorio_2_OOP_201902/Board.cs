@@ -156,5 +156,19 @@ namespace Laboratorio_2_OOP_201902
 
             }
         }
+        public void DestroyCards() {
+            List<Card.Card>[] captainCards = new List<Card.Card>[DEFAULT_NUMBER_OF_PLAYERS] {
+                new List <Card.Card>( playerCards [0]["captain"]), new List <Card.Card >( playerCards [1]["captain"])
+            };
+            for (int i = 0; i < playerCards.Length; i++)
+            {
+                playerCards[i].Clear();
+            }
+            for (int i = 0; i < playerCards.Length; i++)
+            {
+                playerCards[i].Add(captainCards[i]["captain"]);
+            }
+
+        }
     }
 }
